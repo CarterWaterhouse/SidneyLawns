@@ -1,0 +1,368 @@
+body {
+    color:black;
+    /* padding: 5px; */
+    margin:0px;
+    padding:0px;
+    overscroll-behavior: none;
+}
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    flex-flow: column wrap;
+}
+.header {
+    padding:30px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: whitesmoke;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.navigation, .navigation h3, .subtitle {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.logo {
+    position: absolute;
+    left:250px;
+    height:130px;
+}
+.button {
+    right: 20px;
+    background-color: white;
+    color:Black;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px
+}
+.pngs {
+    height:50px;
+    width:50px;
+}
+.contact_info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 15px;
+    /* border: 1px solid green; */
+}
+.navis {
+    display:flex;
+    
+    gap: 50px;
+    border: 4px solid black;
+    border-radius: 30px;
+    padding:10px;
+}
+.rHeader {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position:absolute;
+    right:250px;
+    
+    /* border: 1px solid black; */
+}
+.main{
+    background-color: gainsboro;
+    z-index: -2;
+    /* top:120px; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    min-height: 75%;
+    min-width:100%;
+}
+h1, .Jobs, .day, .hours li, .service_area h3, .contact, .media h3, .text > h3, .text > p {
+    color: black;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.Title {
+    margin: 90px 0 20px 0;
+    padding: 15px 10px;
+    border-top: 10px solid whitesmoke;
+    border-bottom: 10px solid whitesmoke;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:whitesmoke;
+}
+.SubTitle {
+    padding: 15px 10px;
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:whitesmoke;
+    text-align: center;
+}
+.title h1 {
+    color:gainsboro;
+}
+.title{
+    text-align: center;
+    bottom:0;
+}
+.video {
+    min-height: 75%;
+    min-width:100%;
+    
+}
+.first {
+    bottom:0px;
+    background-color: rgba(0,0,0,0.4);
+    border-top: 10px solid whitesmoke;
+    border-bottom: 10px solid whitesmoke;
+    width: 100%;
+    margin-top:800px;
+    margin-bottom: 200px;
+}
+#myVideo {
+    position: fixed;
+    z-index: -1;
+  right: 12.5%;
+  top:100px;
+  min-width: 75%;
+  min-height: 75%;
+  background-color: gray;
+}
+.second {
+    padding-top: 20px;
+    width: 90%;
+    min-height:500px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Jobs {
+    margin:0px;
+    padding: 0 30 0 30;
+    font-size: 40px;
+    /* width:var() */
+    
+}
+.Jobs h3 {
+    margin: 15px 0 10 0;
+    border-top: 4px solid black;
+    /* border-bottom: 4px solid black; */
+}
+.footer {
+    background-color: gainsboro;
+    color:white;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 20px 0 20px 0
+}
+
+.hours {
+    max-height: 50%;
+    grid-column: 1 / 2;
+    grid-row:1 / 3;
+    padding-left: 45%;
+    /* padding-top: 5% */
+}
+.hours ul {
+    list-style-type: none;
+    margin:0;
+}
+.hours .day {
+    font-size: 30px;
+    margin: 0 0 30 0;
+
+}
+.time {
+    font-size: 25px;
+    font-weight: 500;
+    padding-left:20px;
+    margin:10 0 0 0;
+}
+.large_img {
+    height: 300px;
+}
+.service_area {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+.service_area h3, .media h3 {
+    font-size:35px;
+    font-weight:bold;
+    margin:0;
+    padding: 0 0 20 0;
+}
+.media {
+    display:block;
+    grid-row:2 / 3;
+    grid-column:2 / 3;
+    height: 70px;
+    margin-top: 30px;
+}
+.contact {
+    font-size: 25px;
+    font-weight: 500;
+}
+.is_inline {
+    display: flex;
+    flex-flow: row nowrap;
+    gap:30px;
+    height: 70px;
+}
+.socials {
+    gap:30px;
+    display:flex;
+    flex-flow: row nowrap;
+    margin-bottom:20px;
+}
+gallery_container {
+    Width:100%;
+    display: block;
+    padding-bottom: 10%;
+    margin-top:10%;
+    text-align: center;
+}
+#gallery {
+    margin-top:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.main2, .about_us {
+    background-color: gainsboro;
+    z-index: -2;
+    top:120px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    
+    min-height: 75%;
+    min-width:100%;
+    padding-bottom:10%;
+}
+#gallery_btn_next {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    width: 10%;
+
+}
+h2.subtitle {
+    text-align: center;
+    font-size:40px;
+}
+.about_us {
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    margin-top:90px;
+    padding-top:200px;
+}
+.text > h3 {
+    font-size:40px;
+}
+.text > p {
+    font-size: 30px;
+    font-weight: 400;
+}
+.text {
+    padding-left:80px;
+    grid-column: 1 / 2;
+}
+.jobs .text {
+    font-weight: 400;
+    padding-left:30px;
+}
+.portrait {
+    grid-column: 2 / 3;
+    padding-left: 40px;
+}
+.our_team {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+.team_member {
+    padding-left:10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media all and (max-width: 1400px) {
+    .header .rHeader .contact_info {
+        display: none;
+    }
+    #myVideo {
+        width:100%;
+        right:0px;
+        align-self: center;
+    }
+}
+@media all and (max-width: 1100px) {
+    .header {
+        flex-flow:column wrap;
+        height:198px;
+        justify-content: center;
+        align-content: center;
+        gap:0px;
+        position: fixed;
+        right:0px;
+        gap:10px;
+        padding-right: 0px;
+        padding-left:0px;
+    }
+    .logo, .rHeader {
+        position: static
+    }
+    .navigation {
+        font-size: 50px;
+    }
+    .hours {
+        padding-left: 20%;
+    }
+    .is_inline {
+        display:inline-block;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-bottom:30px;
+        gap:20px;
+    }
+    .pngs.phone {
+        align-self: center;
+    }
+    #myVideo {
+        width:100%;
+        right:0px;
+    }
+    h2.subtitle {
+        font-size:30px;
+    }
+}

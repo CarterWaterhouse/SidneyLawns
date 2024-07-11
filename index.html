@@ -1,100 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Pressure Washing Services</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #000;
-            background-color: #fff;
-        }
-        header {
-            background-color: #00f;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #000;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            border: 2px solid #00f;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>John Doe Pressure Washing Services</h1>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to John Doe Pressure Washing Services! I specialize in providing top-notch pressure washing solutions for residential and commercial properties. With years of experience in the industry, I am dedicated to delivering high-quality results and ensuring customer satisfaction. My goal is to make your property look as good as new, using the best equipment and techniques available.</p>
-        </section>
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="example1.jpg" alt="Pressure Washing Project 1">
-                <img src="example2.jpg" alt="Pressure Washing Project 2">
-                <img src="example3.jpg" alt="Pressure Washing Project 3">
+<!-- Brand Idendity and Website Plan -->
+<!-- Brad Waterhouse Exavating Ltd. -->
+<!-- Colors: Black/Gray foreground (text), Gray (Element backgrounds), White (Main Background/Outline) -->
+<!-- Style: Professional, needs to represent a strong work ethic, a solid team, and excellent communication -->
+<!-- Navigation: Four main pages (Homepage, About Us, Contact, Gallery, Jobs previewer) -->
+<!-- Homepage: Needs to display Logo, service areas, hours, job coverage, Social media (or link to contact), and Customer Testimonials -->
+<!-- About Us: Maybe pictures of the team, general description of company history, Equipment, Future Aspirations, and detailed listing of jobs that we can do -->
+<!-- Contact: Hours, Location of Service, Social Media, Email/Phone, Quick Queryer (An email form) -->
+<!-- Gallery: Large gallery of two different kinds of jobs (Individual Client jobs and Jobs done for bigger companies like Lida Homes) -->
+<!-- Jobs Previewer: Gives an overview of what jobs can be done and what availability is -->
+
+<html>
+    <head>
+        <title>Brad Waterhouse Excavating Ltd.</title>
+        <link href="style.css" type="text/css" rel="Stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body onload="init()">
+        
+    <div class="content">
+        <div class="header">
+            <!-- <div class="logo_container"> -->
+                <img class="navigation logo" src="BRAD-2-[Converted].png" onclick="location.href = 'index.html';">
+            <!-- </div> -->
+            <div class="rHeader">
+                <div class="contact_info">
+                    <img class="pngs" src="phone.png">
+                    <h3 class="navigation">(250)-213-9583</h3>
+                    <img class="pngs" src="email.png">
+                    <h3 class="navigation">bwexcavatingltd@gmail.com</h3>
+                </div>
+                <div class="navis">
+                    <a class="navigation" href="Consultation.html">Consultation Booking</a>
+                    <a class="navigation" href="AboutUs.html">About Us</a>
+                    <a class="navigation" href="Gallery.html">Gallery</a>
+                </div>
             </div>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>Residential Pressure Washing</li>
-                <li>Commercial Pressure Washing</li>
-                <li>Driveway and Sidewalk Cleaning</li>
-                <li>Deck and Patio Cleaning</li>
-                <li>Graffiti Removal</li>
-                <li>Roof Cleaning</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you have any questions or would like to schedule a pressure washing service, please feel free to reach out to me:</p>
-            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-        </section>
+            <!-- <a href="JobsPreview.html">Job Preview</a> -->
+            <!-- <button type="button" class="button CallUs" onclick="Contactbtn()">Give us a call!</button> -->
+        </div>
+
+        <div class="main">
+            <div class="first">
+                <div class="video">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="Brad-Waterhouse-Excavating-promo-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="title">
+                    <h1 class="identity">Brad Waterhouse Excavating Ltd.</h1>
+                </div>
+            </div>
+
+            <div class="second">
+                <div class="Jobs top left">
+                    <h3>
+                        Excavating
+                    </h3>
+                    <p class="text">With our wide range of heavy equipment ranging from large excavators to skidsteers, we can tackle any construction or development job</p>
+                </div>
+                <div class="Jobs top right">
+                    <h3>
+                        Demolition
+                    </h3>
+                    <p class="text">We have over 20 years experience in our field and that includes demolishion. Let us help you prepare your next big job</p>
+                </div>
+                <div class="Jobs bottom left">
+                    <h3>
+                        Trucking
+                    </h3>
+                    <p class="text">Our truck drivers are always on the move and only a call away to schedule times for loading and hauling</p>
+                </div>
+                <div class="Jobs bottom right">
+                    <h3>
+                        Civil Contracting
+                    </h3>
+                    <p class="text">Out experience working in our field allows us to take-on civil contracting jobs. We can lay service pipes, prepare sites for constuction and more</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="hours">
+                <ul>
+                    <li class="day">
+                        Monday
+                        <p class="time">
+                            7am - 6pm
+                        </p>
+                    </li>
+                    <li class="day">
+                        Tuesday
+                        <p class="time">
+                            7am - 6pm
+                        </p>
+                    </li>
+                    <li class="day">
+                        Wednesday
+                        <p class="time">
+                            7am - 6pm
+                        </p>
+                    </li>
+                    <li class="day">
+                        Thursday
+                        <p class="time">
+                            7am - 6pm
+                        </p>
+                    </li>
+                    <li class="day">
+                        Friday
+                        <p class="time">
+                            7am - 6pm
+                        </p>
+                    </li>
+                    <li class="day">
+                        Saturday
+                        <p class="time">
+                            8am - 4pm
+                        </p>
+                    </li>
+                    <li class="day">
+                        Sunday
+                        <p class="time">
+                            Closed
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="service_area">
+                <h3>
+                    Our Area of Operations
+                </h3>
+                <!-- IMG of Greater Victoria, Sooke, Mill Bay, and Cowichan -->
+                <img class="large_img"  src="DeskRobot.png">
+            </div>
+            <div class="media">
+                <h3>Find us here!</h3>
+                <div class="socials">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/universityofvictoria/"><img class="pngs" src="instagram.png"></a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/universityofvictoria/"><img class="pngs" src="facebook.png"></a>
+                    <!-- Youtube -->
+                    <a href="https://www.tiktok.com/@universityofvictoria?lang=en"><img class="pngs" src="youtube.png"></a>
+                </div>
+                <div class="contact">
+                    <div class="is_inline">
+                        <img class="pngs phone" src="phone.png">
+                        <h3 class="phone">
+                            (250)-213-9583
+                        </h3>
+                    </div>  
+                    <div class="is_inline">  
+                        <img class="pngs" src="email.png">
+                        <h3 class="email">
+                        bwexcavatingltd@gmail.com
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    <footer>
-        <p>&copy; 2024 John Doe Pressure Washing Services</p>
-    </footer>
-</body>
+    </body>
 </html>

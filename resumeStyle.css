@@ -1,0 +1,188 @@
+body {
+    color:black;
+    /* padding: 5px; */
+    margin:0px;
+    padding:0px;
+}
+body, html {
+    height: 100%;
+}
+.background_img {
+    min-width:100%;
+}
+#myVideo {
+    position: fixed;
+    z-index: -1;
+}
+.resume_container {
+    z-index: 5;
+    width:100%;
+    height:175%;
+    margin-top: 60px;
+    padding-top:100px;
+}
+.header {
+    position: fixed;
+    background-color: gainsboro;
+    width:100%;
+    text-align: center;
+    top:0px;
+}
+a {
+    text-decoration: none;
+}
+.heading {
+    font-family: 'Questrial', sans-serif;
+    color: black
+}
+.resume_main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:60px;
+    /* background-color: rgba(0,0,0,0.7); */
+    border:4px solid white;
+    /* border-radius: 20px; */
+    width: 1159px;
+    height: 1600px;
+}
+.left {
+    display: block;
+    grid-column: 1 / 2;
+    background-color: rgba(0,0,0,0.7);
+}
+.right {
+    grid-column: 2 / 3;
+    background-color: rgb(220, 220, 220,0.8);
+    padding-top:50px;
+}
+.portrait {
+    display: block;
+    justify-content: center;
+}
+.large_img {
+    display: block;
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    border:4px solid white;
+}
+
+h2.heading, .gray {
+    color:white;
+    font-size:30px;
+    background-color: rgb(7, 203, 203);
+    width:50%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:0px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    text-transform: capitalize;
+}
+.contact_info {
+    display: inline;
+    padding-left:15%;
+}
+.is_inline > p {
+    color:white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+}
+.pngs {
+    width:40px;
+    height:40px;
+    display: inline;
+}
+.is_inline {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left:40px;
+    gap: 20px;
+}
+.small_heading {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color:white;
+    font-size: 25px;
+    font-weight:bold;
+    border-bottom: 2px solid white;
+    /* width:60%; */
+}
+.medium_heading {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color:white;
+    font-size: 25px;
+    font-weight:bold;
+}
+.bold, h1.bold {
+    font-weight: bold;
+}
+.text {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    color:white;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right:15px;
+}
+.name {
+    font-family: 'Questrial', sans-serif;
+    font-size: 90px;
+    padding-left:5%;
+    margin-bottom: 0px;
+    margin-top:0px;
+    font-weight:300;
+    /* background-color: white; */
+    width:75%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+h2.gray {
+    color:white;
+    background-color: black;
+    width:70%;
+    text-align: center;
+    padding-left:0;
+}
+.profession {
+    font-family: 'Questrial', sans-serif;
+    font-size: 60px;
+    padding-left:5%;
+    margin-bottom: 0px;
+    margin-top:0px;
+    font-weight:300;
+    /* background-color: white; */
+    width:75%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.references > h2.gray {
+    margin-top:5px;
+}
+.right .text, .right .small_heading, .right .medium_heading {
+    color:black;
+    /* font-size: 24px; */
+    font-weight:bold;
+}
+.right .small_heading {
+    border-color: black;
+}
+.refers_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.refer_left {
+    grid-column: 1 / 2;
+}
+.refer_right {
+    grid-column: 2 / 3;
+}
