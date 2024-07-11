@@ -10,7 +10,7 @@ function init() {
 }
 
 function loadCalendarTest() {
-    let rawURL = "https://calendar.zoho.com/api/v1/calendars/7262585a5ecc4380b2cbb7b97ec1cc61/events";
+    
 
     $.get(rawURL, function(data){ 
         $("#raw").html(data);
@@ -40,8 +40,7 @@ function loadChuckAPI() {
 }
  
 function loadCalendar() {
-    let clientID = "1000.AUI6F3HB01TK83HMUFXQS7NA5ZS52G";
-    let clientSecret = "5c8558082e3b82d03e83d24d6ab411e80d8678cf46";
+    
     let authRaw = "https://accounts.zoho.com/oauth/v2/auth?response_type=code&client_id=" + clientID + "&scope=ZohoCalendar.event.ALL";// "&redirect_uri=154.5.206.84";
     console.log(authRaw);
     $.get(authRaw, function(data) {
@@ -50,7 +49,7 @@ function loadCalendar() {
         let tmpAuthCode = "1000.97fe7c929ce5f05f34c335ebe3c5d0fa.31b544977530207aea7357c50a82ded1";
         let accessRaw = "https://accounts.zoho.com/oauth/v2/token?code=" + tmpAuthCode + "&grant_type=authorization_code&client_id=" + clientID + "&client_secret=" + clientSecret + "&scope=ZohoCalendar.event.ALL"; //+ "&redirect_uri=154.5.206.84";
         $.get(accessRaw, function(data) {
-            let rawURL = 'https://calendar.zoho.com/api/v1/calendars/7262585a5ecc4380b2cbb7b97ec1cc61/events';
+            
             $.ajax({
                 url: rawURL,
                 method: 'GET',
@@ -73,8 +72,7 @@ function loadCalendarBypass() {
     let tmpAuthCode = "1000.2293e07eef59e136ecac1ab298caa209.3245659c06eb08ec4db7225aba249a44";
     let rawURL = 'https://calendar.zoho.com/api/v1/calendars/7262585a5ecc4380b2cbb7b97ec1cc61/events';
 
-    let clientID = "1000.AUI6F3HB01TK83HMUFXQS7NA5ZS52G";
-    let clientSecret = "5c8558082e3b82d03e83d24d6ab411e80d8678cf46";
+    
     let grant_type = "client_credentials";
     let scope = "ZohoCalendar.event.ALL";
     let soid = "ZohoCalendar.1";
